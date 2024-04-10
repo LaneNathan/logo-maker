@@ -1,0 +1,23 @@
+{
+  "name": "logo-maker",
+  "version": "1.0.0",
+  "description": "use the cli to answer question that will create a link for a new logo",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaneNathan/logo-maker.git"
+  },
+  "author": "Nathan Lane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaneNathan/logo-maker/issues"
+  },
+  "homepage": "https://github.com/LaneNathan/logo-maker#readme",
+  "dependencies": {
+    "inquirer": "^8.2.6"
+  }
+}
