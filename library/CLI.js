@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const {writeFile} = require("fs/promises");
 const choices = require("inquirer/lib/objects/choices");
 const SVG = require("./svg");
-
+const { Circle, Triangle, Square } = require("./shapes");
 
 
 class CLI {
