@@ -1,8 +1,8 @@
 const inquirer = require("inquirer");
 const {writeFile} = require("fs/promises");
 const choices = require("inquirer/lib/objects/choices");
-const { type } = require("os");
-const { text } = require("stream/consumers");
+const SVG = require("./svg");
+
 
 
 class CLI {
@@ -40,10 +40,14 @@ class CLI {
 
                 }
                 shape.setColor(data.color);
-            })
-    }
+
+                const svg = new SVG();
+                svg.setText(text);
+                svg.setShape(shape);
+           
+    })
 
 
-}
+}}
 
 module.exports = CLI;
