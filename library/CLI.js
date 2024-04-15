@@ -1,7 +1,8 @@
 const inquirer = require("inquirer");
-const {writeToFile} = require("fs/promises");
-const Choices = require("inquirer/lib/objects/choices");
+const {writeFile} = require("fs/promises");
+const choices = require("inquirer/lib/objects/choices");
 const { type } = require("os");
+const { text } = require("stream/consumers");
 
 
 class CLI {
@@ -15,7 +16,7 @@ class CLI {
                 {   type:'list',
                     name:'shape',
                     message:'Which shape would you like?',
-                    choices:['square','circle','triangle'],
+                    choices:['Square','Circle','Triangle'],
                 },
                 {
                     type:'input',
@@ -28,15 +29,17 @@ class CLI {
                     message:'What color would you like your logo to be?',
                 }
             ]).then((data)=> {
-                if(data.shape === 'square'){
-                    const shape = new Square()
+                if(data.shape === 'Square'){
+                    const shape = new Square();
 
+                }else if(data.shape === 'Circle'){
+                    const shape = new Circle();
 
-                }else if(data.shape === 'circle'){
-
-                }else if(data.shape === 'triangle'){
+                }else if(data.shape === 'Triangle'){
+                    const shape = new Triangle();
 
                 }
+                shape.setColor(data.color);
             })
     }
 
