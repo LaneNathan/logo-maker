@@ -46,6 +46,11 @@ class CLI {
                svg.setText(text);
                svg.setShape(shape);
            
+    }).then(()=>{
+        console.log("your      logo was created!");
+    }).catch((error) =>{
+        console.log(error);
+        console.log("SOmething went wrong.:(")
     });
 
 
