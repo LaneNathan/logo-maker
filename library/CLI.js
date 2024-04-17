@@ -41,11 +41,11 @@ class CLI {
                 }
                 shape.setColor(data.color);
 
-                const svg = new SVG();
-                svg.setText(text);
-                svg.setShape(shape);
+               const svg = new SVG();
+               svg.setText(text);
+               svg.setShape(shape);
            
-    })
+    });
 
 
 }}
