@@ -21,6 +21,7 @@ class CLI {
                 {
                     type:'input',
                     name:'text',
+                    suffix: ' Characters have to be less than 3.',
                     message:'What would you like the logo to say?',
                 },
                 {
