@@ -59,7 +59,7 @@ class CLI {
                 shape.setColor(color);
 
                const svg = new SVG();
-               svg.setText(text);
+               svg.setText(text, textColor);
                svg.setShape(shape);
            
     }).then(()=>{
