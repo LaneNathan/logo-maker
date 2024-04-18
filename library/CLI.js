@@ -64,7 +64,7 @@ class CLI {
                return writeFile("logo.svg", svg.render())
            
     }).then(()=>{
-        console.log("your      logo was created!");
+        console.log(`Your logo was created!`);
     }).catch((error) =>{
         console.log(error);
         console.log("SOmething went wrong.:(")
