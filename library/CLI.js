@@ -11,6 +11,7 @@ class CLI {
     }
 
     run(){
+        let shape;
         inquirer
             .prompt([
                 {   type:'list',
