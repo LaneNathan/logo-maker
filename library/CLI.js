@@ -35,18 +35,28 @@ class CLI {
                     name:'color',
                     message:'What color would you like your logo to be?',
                 }
-            ]).then((data)=> {
-                if(data.shape === 'Square'){
-                    const shape = new Square();
-
-                }else if(data.shape === 'Circle'){
-                    const shape = new Circle();
-
-                }else if(data.shape === 'Triangle'){
-                    const shape = new Triangle();
-
+    ]).then(({shapeType, text, textColor, color })=> {
+                let shape;
+                switch (shapeType) {
+                    case 'Square':
+                        shape = new Square();
+                        break;
+                    case 'Circle':
+                        shape = new Circle();
+                        break;
+                    case 'Triangle':
+                        shape = new Triangle();
+                        break;
+                    default:
+                        console.error(`Unsupported shape type: ${shapeType}`);
                 }
-                shape.setColor(data.color);
+    
+                if (!shapeType) {
+                    console.error("Shape creation failed.");
+                    
+                }
+
+                shape.setColor(color);
 
                const svg = new SVG();
                svg.setText(text);
