@@ -61,6 +61,7 @@ class CLI {
                const svg = new SVG();
                svg.setText(text, textColor);
                svg.setShape(shape);
+               return writeFile("logo.svg", svg.render())
            
     }).then(()=>{
         console.log("your      logo was created!");
