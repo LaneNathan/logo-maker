@@ -2,12 +2,9 @@ class Shape{
     constructor(){
         this.Shapecolor = '';
         this.text = '';
-    
     }
      setColor(colorName){
         this.Shapecolor = colorName;
-
-
     }
     render(){
     }
@@ -27,7 +24,7 @@ class Triangle extends Shape{
         super();
     }
     render(){
-        return `<polygon points="150, 18 244, 182 56, 182" fill="${this.Shapecolor}"`
+        return `<polygon points="150, 18 244, 182 56, 182" fill="${this.Shapecolor}" />`
     }
 }
 
