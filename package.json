@@ -4,7 +4,7 @@
   "description": "use the cli to answer question that will create a link for a new logo",
   "main": "index.js",
   "scripts": {
-    "test": "npm test",
+    "test": "jest",
     "start": "node index.js"
   },
   "repository": {
@@ -19,5 +19,9 @@
   "homepage": "https://github.com/LaneNathan/logo-maker#readme",
   "dependencies": {
     "inquirer": "^8.2.6"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
   }
+
 }
