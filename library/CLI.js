@@ -14,7 +14,7 @@ class CLI {
         inquirer
             .prompt([
                 {   type:'list',
-                    name:'shape',
+                    name:'shapeType',
                     message:'Which shape would you like?',
                     choices:['Square','Circle','Triangle'],
                 },
