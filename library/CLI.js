@@ -24,6 +24,11 @@ class CLI {
                     name:'text',
                     suffix: ' Characters have to be less than 3.',
                     message:'What would you like the logo to say?',
+                }, 
+                {
+                    type:'input',
+                    name:'textColor',
+                    message:'What color would you like your text?',
                 },
                 {
                     type:'input',
