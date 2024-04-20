@@ -1,5 +1,5 @@
 # logo-maker
-![alt text]("./assets/Screenshot 2024-04-20 004238.png" "Triangle logo")
+![triangle logo](./assets/Screenshot 2024-04-20 004238.png)
 
 ## Description
 This Logo Maker is useful for generating simple logos in a quick and easy way. 
@@ -26,3 +26,4 @@ This application is meant to run in your CLI through Node.js. Once installed and
 - Run tests with `npm run test`
 
 ## License
+![Static Badge](https://img.shields.io/badge/license-MIT-blue)
