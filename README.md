@@ -1,5 +1,5 @@
 # logo-maker
-![triangle logo](./assets/Screenshot 2024-04-20 004238.png)
+![triangle logo]("./assets/Screenshot 2024-04-20 004238.png")
 
 ## Description
 This Logo Maker is useful for generating simple logos in a quick and easy way. 
