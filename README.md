@@ -9,6 +9,7 @@ This application is meant to run in your CLI through Node.js. Once installed and
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+- [Example video](#example-video)
 
 
 ## Installation
@@ -27,3 +28,6 @@ This application is meant to run in your CLI through Node.js. Once installed and
 
 ## License
 ![Static Badge](https://img.shields.io/badge/license-MIT-blue)
+
+## Example Video
+![Example video](https://watch.screencastify.com/v/vPNqh233zQBuSP2EnYXj)
